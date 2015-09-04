@@ -1,0 +1,224 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base" >
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@null"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            
+            <Button
+                android:id="@+id/rotate"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/text"
+                android:text="rotate"
+                android:textColor="@color/base"
+                android:textSize="@dimen/text_size_s" />
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="SimpleCrop"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_size_s" />
+
+            <Button
+                android:id="@+id/buttonDone"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/text"
+                android:text="CROP"
+                android:textColor="@color/base"
+                android:textSize="@dimen/text_size_s" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/menu_bg" >
+
+        <LinearLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonFitImage"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:background="@color/text"
+                android:padding="8dp"
+                android:text="FIT IMAGE"
+                android:textColor="@color/base"
+                android:textSize="@dimen/text_size_s" />
+
+            <Button
+                android:id="@+id/button1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:background="@color/text"
+                android:padding="8dp"
+                android:text="1:1"
+                android:textColor="@color/base"
+                android:textSize="@dimen/text_size_s" />
+
+            <Button
+                android:id="@+id/button3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:background="@color/text"
+                android:padding="8dp"
+                android:text="3:4"
+                android:textColor="@color/base"
+                android:textSize="@dimen/text_size_s" />
+
+            <Button
+                android:id="@+id/button4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:background="@color/text"
+                android:padding="8dp"
+                android:text="4:3"
+                android:textColor="@color/base"
+                android:textSize="@dimen/text_size_s" />
+
+            <Button
+                android:id="@+id/button9_16"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:background="@color/text"
+                android:padding="8dp"
+                android:text="9:16"
+                android:textColor="@color/base"
+                android:textSize="@dimen/text_size_s" />
+
+            <Button
+                android:id="@+id/button16_9"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:background="@color/text"
+                android:padding="8dp"
+                android:text="16:9"
+                android:textColor="@color/base"
+                android:textSize="@dimen/text_size_s" />
+            
+            <Button
+                android:id="@+id/button16_10"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:background="@color/text"
+                android:padding="8dp"
+                android:text="16:10"
+                android:textColor="@color/base"
+                android:textSize="@dimen/text_size_s" />
+
+            <Button
+                android:id="@+id/buttonCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:background="@color/text"
+                android:padding="8dp"
+                android:text="7:5"
+                android:textColor="@color/base"
+                android:textSize="@dimen/text_size_s" />
+
+            <Button
+                android:id="@+id/buttonFree"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:background="@color/text"
+                android:padding="8dp"
+                android:text="FREE"
+                android:textColor="@color/base"
+                android:textSize="@dimen/text_size_s" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.isseiaoki.simplecropview.CropImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tab_bar"
+        android:layout_below="@id/toolbar"
+        android:paddingBottom="64dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="32dp"
+        custom:backgroundColor="@color/base"
+        custom:cropMode="ratio_fit_image"
+        custom:frameColor="@color/frame"
+        custom:frameStrokeWeight="1dp"
+        custom:guideColor="@color/guide"
+        custom:guideShowMode="show_on_touch"
+        custom:guideStrokeWeight="1dp"
+        custom:handleColor="@color/handle"
+        custom:handleShowMode="show_always"
+        custom:handleSize="8dp"
+        custom:minFrameSize="50dp"
+        custom:overlayColor="@color/overlay"
+        custom:touchPadding="8dp" />
+
+    <Button
+        android:id="@+id/buttonChangeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignBottom="@id/cropImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@color/text"
+        android:padding="8dp"
+        android:text="CHANGE IMAGE"
+        android:textColor="@color/base"
+        android:textSize="@dimen/text_size_s" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/cropImageView"
+        android:background="@color/handle" />
+
+</RelativeLayout>

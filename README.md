@@ -9,6 +9,9 @@ It simplify your code for cropping image and provides easily customizable UI.<br
 Supported on API Level 9 and above.
 
 
+![](https://github.com/longtaoge/SimpleCropView/blob/master/crop.gif)
+
+
 ![demo](https://raw.github.com/wiki/IsseiAoki/SimpleCropView/images/gif/demo_basic_usage.gif)
 
 ##Table of Contents

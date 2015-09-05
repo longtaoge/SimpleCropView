@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">simple-crop-image-example</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="saving_image">保存图片</string>
+    <string name="preparing_card">准备存储卡</string>
+    <string name="no_storage_card">没有找到存储卡</string>
+    <string name="not_enough_space">空间不足</string>
+
+</resources>
